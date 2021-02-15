@@ -4,5 +4,10 @@
 # License
 `zmobot` license is under the [`AGPL3`](https://github.com/sungbin5304/zmobot/blob/master/LICENSE) license.
 
-# DO NOT PUBLIC THIS REPO.
-카카오톡 계정이 포함되어 있음.
+# Deprecated.
+`zmobot` is no longer being updated.
+
+-----
+
+# Speical Thanks
+하뜌 (Request to hide own code -> `.gitignore`)
