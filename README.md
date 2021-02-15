@@ -18,3 +18,7 @@ KakaoTalk bot with Loco protocol.
 이용자 보호조치가 없었더라면 아마도 계속 했을지도...? <br/> <br/>
 nodejs에서 안드로이드 기법(room, viewmodel, kclass 등등)을 써서 프로젝트 구조를 짠다는게 웃기긴 했지만 <br/>
 내가 안드로이드 충인걸 어떡해 ㅋㅋ ㅠ
+
+## 만약에 이보 지옥에서 풀린다면...?
+[이 곳](https://github.com/sungbin5304/zmobot-private)에서 `.gitignore`없는 즈모봇 전체 코드를 다운받아서 <br/>
+덮어쓰기 해서 다시 서비스 킨다면 될 듯!
