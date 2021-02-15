@@ -12,7 +12,7 @@ KakaoTalk bot with Loco protocol.
 ## Speical Thanks
 하뜌 (Request to hide own code -> `.gitignore`)
 
-## 사용평(?)
+## 회고
 그냥 타입스크립트를 쓸 수 있었던 좋은 프로젝트였다.<br/>(평소에 타입스크립트를 써보고 싶었는데 쓸 수 있는 곳이 없었다!) <br/><br/>
 지속되는 이용자 보호조치로 인해 서브 디바이스 로그인 제한에 짜증나서 결국 버리긴 했지만, <br/>
 이용자 보호조치가 없었더라면 아마도 계속 했을지도...? <br/> <br/>
