@@ -1,0 +1,499 @@
+<!--
+ Copyright (C) 2021 Sungbin Ji
+ 
+ This program is free software: you can redistribute it and/or modify
+ it under the terms of the GNU Affero General Public License as
+ published by the Free Software Foundation, either version 3 of the
+ License, or (at your option) any later version.
+ 
+ This program is distributed in the hope that it will be useful,
+ but WITHOUT ANY WARRANTY; without even the implied warranty of
+ MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+ GNU Affero General Public License for more details.
+ 
+ You should have received a copy of the GNU Affero General Public License
+ along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!DOCTYPE html>
+<html lang="kr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="website" property="og:type">
+    <meta content="즈모봇 ::: 카카오톡 봇" property="og:title">
+    <meta content="즈모봇 메인 페이지" property="og:description">
+    <meta
+            content="https://raw.githubusercontent.com/sungbin5304/zmobot/master/web/images/logo.png?token=AJW2KIHNJXLLQZN7XD5CONTAGFBSQ"
+            property="og:image">
+    <meta content="https://zmobot.xyz/" property="og:url">
+
+    <title>즈모봇 ::: 카카오톡 봇</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700,800,900&display=swap"
+          rel="stylesheet">
+
+    <link rel="icon" href="web/images/icon.ico">
+    <link rel="shortcut icon" href="web/images/icon.ico">
+
+    <link rel="stylesheet" href="web/css/bootstrap.min.css" type="text/css">
+    <link rel="stylesheet" href="web/css/font-awesome.min.css" type="text/css">
+    <link rel="stylesheet" href="web/css/elegant-icons.css" type="text/css">
+    <link rel="stylesheet" href="web/css/slicknav.min.css" type="text/css">
+    <link rel="stylesheet" href="web/css/style.css" type="text/css">
+</head>
+
+<body>
+
+<div class="offcanvas__menu__overlay"></div>
+<div class="offcanvas__menu__wrapper">
+    <div class="canvas__close">
+        <span class="fa fa-times-circle-o"></span>
+    </div>
+    <div class="offcanvas__logo">
+        <a href="#"><img src="web/images/logo.png" height="50px" width="50px" alt=""></a>
+    </div>
+    <nav class="offcanvas__menu mobile-menu">
+        <pretty-font>
+            <ul>
+                <li><a href="#introduce">즈모봇 소개</a></li>
+                <li><a href="#functions">편의 기능</a></li>
+                <li><a href="#tools">채팅 도구</a></li>
+                <li><a href="">게임</a>
+                    <ul class="dropdown">
+                        <li><a href="#rpg">RPG</a></li>
+                        <li><a href="#wordchain">끝말잇기</a></li>
+                        <li><a href="#chosung">초성퀴즈</a></li>
+                    </ul>
+                </li>
+                <li><a href="#use">사용하기</a></li>
+            </ul>
+        </pretty-font>
+    </nav>
+    <div id="mobile-menu-wrap"></div>
+    <div class="offcanvas__auth">
+        <ul>
+            <li><a href="./openchat.html"><span class="icon_chat_alt"></span> Open chat</a></li>
+        </ul>
+    </div>
+    <div class="offcanvas__info">
+        <ul>
+            <li><span class="fa fa-envelope"></span> mail@zmobot.xyz</li>
+        </ul>
+    </div>
+</div>
+
+<header class="header-section">
+    <div class="header__info">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 col-md-6">
+                    <div class="header__info-left">
+                        <ul>
+                            <li><span class="fa fa-envelope"></span> mail@zmobot.xyz</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-md-6">
+                    <div class="header__info-right">
+                        <ul>
+                            <li><a href="./openchat.html"><span class="icon_chat_alt"></span> Open chat</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3">
+                <div class="header__logo">
+                    <a href="./index.html"><img src="web/images/logo.png" height="50px" width="50px" alt=""></a>
+                </div>
+            </div>
+            <div class="col-lg-9 col-md-9">
+                <nav class="header__menu">
+                    <pretty-font>
+                        <ul>
+                            <li><a href="#introduce">즈모봇 소개</a></li>
+                            <li><a href="#functions">편의 기능</a></li>
+                            <li><a href="#tools">채팅 도구</a></li>
+                            <li><a href="">게임</a>
+                                <ul class="dropdown">
+                                    <li><a href="#rpg">RPG</a></li>
+                                    <li><a href="#wordchain">끝말잇기</a></li>
+                                    <li><a href="#chosung">초성퀴즈</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#use">사용하기</a></li>
+                        </ul>
+                    </pretty-font>
+                </nav>
+            </div>
+        </div>
+        <div class="canvas__open">
+            <span class="fa fa-bars"></span>
+        </div>
+    </div>
+</header>
+
+<section class="hero-section">
+    <div class="hero__item set-bg" data-setbg="web/images/background.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="hero__text">
+                        <h5 id="user-count">조회중...</h5><br/>
+                        <h2>카카오톡 봇 즈모봇</h2><br/><br/>
+                        <a href="#introduce" class="primary-btn">더 알아보기!</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="introduce">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>즈모봇 소개</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <div class="services__item">
+                        <h5>즈모봇은 2021년 2월 8일부터 시작한 카카오톡 봇 서비스 입니다!</h5>
+                        <h5>다양한 편의 기능과 '모여봐요 동물의 숲'을 바탕으로 한 텍스트 RPG 게임을 지원합니다.</h5>
+                        <h5>1인 개발자가 운영하는 봇이므로 봇이 불안정하거나 때때로 오작동 할 수도 있습니다.</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="functions">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>편의 기능</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>메시지 삭제 감지</h5>
+                    <span>자동 반응</span>
+                    <p>메시지가 삭제되면 삭제된 메시지를 전송해줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>메시지 가리기 감지</h5>
+                    <span>자동 반응</span>
+                    <p>메시지가 가려지면 가려진 메시지를 전송해줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>읽은사람 감지</h5>
+                    <span>..읽은사람 [시간 (단위: 분, 기본값 5분)]</span>
+                    <p>[시간] 범위 안에 지금까지 메시지를 읽은 사람들의 목록을 보여줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>추가 예정</h5>
+                    <span>..?</span>
+                    <p>새로운 기능이 곧 추가됩니다!</p>
+                    <p>Coming soon....?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="tools">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>채팅 도구 (*: 관리자기능)</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>*DB 정리</h5>
+                    <span>..db압축</span>
+                    <p>즈모봇의 데이터베이스를 정리해줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>*공지</h5>
+                    <span>..공지 [공지 메시지]</span>
+                    <p>[공지 메시지]를 즈모봇이 들어가있는 모든 채팅방에 전송합니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>*메시지 삭제</h5>
+                    <span>..삭제</span>
+                    <p>답장된 메시지가 즈모봇의 채팅을 경우 삭제합니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>*메시지 정보 확인</h5>
+                    <span>..밑메</span>
+                    <p>답장된 메시지의 정보를 확인합니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>*eval</h5>
+                    <span>..eval [코드]</span>
+                    <p>[코드]를 실행합니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>확성기</h5>
+                    <span>..확성기 [메시지] / 부방장 필요</span>
+                    <p>[메시지]를 외칩니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>인사</h5>
+                    <span>..안녕</span>
+                    <p>즈모봇이 격렬하게 인사해줍니다 :)</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>박수</h5>
+                    <span>..박수</span>
+                    <p>즈모봇이 격렬하게 박수를 쳐줍니다 :)</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>프사 얻기</h5>
+                    <span>..프사 [사람 멘션]</span>
+                    <p>멘션한 사람의 프로필 사진을 다운로드 할 수 있는 링크를 제공합니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>추가 예정</h5>
+                    <span>..?</span>
+                    <p>새로운 명령어가 곧 추가됩니다!</p>
+                    <p>Coming soon....?</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="rpg">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>RPG</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>캐릭터 뽑기</h5>
+                    <span>..캐릭터뽑기</span>
+                    <p>자신의 캐릭터를 뽑아줍니다. 뽑은 캐릭터는 재설정으로 변경할 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>캐릭터 재설정</h5>
+                    <span>..캐릭터재설정</span>
+                    <p>1만벨을 사용하여 새로운 캐릭터를 뽑아줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>내 정보 확인</h5>
+                    <span>..내정보</span>
+                    <p>자신의 정보를 자세히 보여줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>낚시</h5>
+                    <span>..낚시</span>
+                    <p>낚시를 진행합니다. 낚시를 통해 돈을 벌 수 있습니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>모든 물고기</h5>
+                    <span>..모든물고기</span>
+                    <p>낚시로 뽑을 수 있는 모든 물고기를 보여줍니다.</p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>물고기 조회</h5>
+                    <span>..물고기 [이름]</span>
+                    <p>[이름]이라는 이름을 가진 물고기의 정보를 보여줍니다.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="wordchain">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>끝말잇기</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>준비중</h5>
+                    <p>현재 준비중인 기능 입니다!</p>
+                </div>
+            </div>
+            <!--<div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="services__item">
+                <h5>추가 예정</h5>
+                <span>..?</span>
+                <p>새로운 기능이 곧 추가됩니다!</p>
+                <p>Coming soon....?</p>
+            </div>
+        </div>-->
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="chosung">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>초성퀴즈</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4 col-md-4 col-sm-6">
+                <div class="services__item">
+                    <h5>준비중</h5>
+                    <p>현재 준비중인 기능 입니다!</p>
+                </div>
+            </div>
+            <!--<div class="col-lg-4 col-md-4 col-sm-6">
+            <div class="services__item">
+                <h5>추가 예정</h5>
+                <span>..?</span>
+                <p>새로운 기능이 곧 추가됩니다!</p>
+                <p>Coming soon....?</p>
+            </div>
+        </div>-->
+        </div>
+    </div>
+</section>
+
+<section class="services-section spad" id="use">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <h3>
+                        <pretty-font>즈모봇 사용하기</pretty-font>
+                    </h3>
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-12">
+                <div class="section-title">
+                    <div class="services__item">
+                        <h5>즈모봇은 즈모봇 오픈채팅방에서 사용신청 후 사용하실 수 있습니다 🥰</h5>
+                        <h5>기능 추가 및 기타 문의는 메일 mail@zmobot.xyz로 해주시면 감사하겠습니다!</h5>
+                        <h5>[ 즈모봇 오픈채팅방: zmobot.xyz/openchat ]</h5>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer class="footer-section">
+    <div class="footer__text set-bg">
+        <div class="container">
+            <div class="footer__text-copyright">
+                <p>
+                    Copyright &copy; Sungbin Ji & Colorlib
+                    <script>
+                      document.write(new Date().getFullYear());
+                    </script>
+                    .
+                    All rights reserved.<br/>This template is made with <i class="fa fa-heart"
+                                                                           aria-hidden="true"></i>
+                    by
+                    <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                </p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script src="web/js/jquery-3.3.1.min.js"></script>
+<script src="web/js/bootstrap.min.js"></script>
+<script src="web/js/jquery.slicknav.js"></script>
+<script src="web/js/main.js"></script>
+<script src="web/js/PrettyFont.js"></script>
+<script src="https://www.gstatic.com/firebasejs/4.11.0/firebase.js"></script>
+<script>
+  const element = document.getElementById('user-count');
+  const firebaseConfig = {
+    apiKey: 'AIzaSyBeCPKF9UPGNB5QGK_0q3AdCIUNKW74gxg',
+    authDomain: 'zmobot-68eff.firebaseapp.com',
+    databaseURL: 'https://zmobot-68eff-default-rtdb.firebaseio.com/',
+    storageBucket: 'zmobot-68eff.appspot.com',
+  };
+  firebase.initializeApp(firebaseConfig);
+  firebase.database().ref('bot/usage-count').on('value', (snapshot) => {
+    const value = snapshot.val();
+    element.innerText = `${value.room}개의 방에서 총 ${value.user}명이 사용중`;
+  });
+</script>
+</body>
+
+</html>
