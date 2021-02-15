@@ -4,7 +4,7 @@
 # License
 `zmobot` license is under the [`AGPL3`](https://github.com/sungbin5304/zmobot/blob/master/LICENSE) license.
 
-# Deprecated.
+# Deprecated
 `zmobot` is no longer being updated.
 
 -----
